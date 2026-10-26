@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolex Cosmograph Daytona - 3D Scroll Storytelling Experience</title>
+  <meta name="description" content="Explore the legendary Rolex Cosmograph Daytona in fully interactive 3D scroll storytelling. Customize finishes, colors, and watch the chronograph disassemble.">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Background Glow Effects -->
+  <div class="glow-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="interactive-element">
+    <div class="logo">ROLEX<span>.</span></div>
+    <nav>
+      <a href="#hero" class="active">Overview</a>
+      <a href="#case">Oyster Case</a>
+      <a href="#tachymeter">Tachymeter</a>
+      <a href="#chronograph">Chronograph</a>
+      <a href="#calibre">Calibre 4130</a>
+      <a href="#specs">Specifications</a>
+      <a href="#customizer">Configure</a>
+    </nav>
+    <button class="cta-btn">Acquire Timepiece</button>
+  </header>
+
+  <!-- Fixed 3D Canvas Background -->
+  <div id="canvas-container"></div>
+
+  <!-- Scrollable Storytelling Layout -->
+  <main>
+    
+    <!-- SECTION 1: HERO (Center Aligned) -->
+    <section id="hero" class="scroll-section hero-section">
+      <div class="hero-content">
+        <span class="badge">The Ultimate Chronograph</span>
+        <h1>Rolex <span>Daytona</span></h1>
+        <p class="lead">
+          Born to race. Scroll down to explore the Oyster casing, disassemble the mechanical Calibre 4130 movement, and configure your own custom timepiece.
+        </p>
+        <div class="scroll-indicator interactive-element">
+          <span>Scroll to Explore</span>
+          <div class="mouse-icon">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: OYSTER CASE (Left Text, Right Watch Space) -->
+    <section id="case" class="scroll-section case-section">
+      <div class="split-grid">
+        <div class="content-col">
+          <span class="badge">High-Performance Engineering</span>
+          <h2>The Oyster Case</h2>
+          <p class="desc-text">
+            Crafted from Oystersteel—a superalloy designed for resistance to corrosion and extreme wear. Its polished lugs and side guards house screw-down chronograph pushers and a Triplock crown, ensuring absolute hermetic protection.
+          </p>
+          <div class="spec-highlights">
+            <div class="spec-item">
+              <span class="spec-val">904L</span>
+              <span class="spec-lbl">Oystersteel Alloy</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">40mm</span>
+              <span class="spec-lbl">Case Diameter</span>
+            </div>
+          </div>
+          <div class="photo-card interactive-element">
+            <img src="/rolex_hero.png" alt="Rolex Daytona Submerged" class="rolex-photo">
+            <div class="photo-caption">Oyster Heritage in the Elements</div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here -->
+      </div>
+    </section>
+
+    <!-- SECTION 3: TACHYMETER (Left Text, Right Watch Space) -->
+    <section id="tachymeter" class="scroll-section tachymeter-section">
+      <div class="split-grid">
+        <div class="content-col">
+          <span class="badge">Speed Measurement</span>
+          <h2>Tachymetric Bezel</h2>
+          <p class="desc-text">
+            A key part of the Cosmograph Daytona's identity is its molded tachymetric scale bezel. It allows drivers to measure average speeds of up to 400 miles or kilometers per hour, perfectly aligning with motorsport performance.
+          </p>
+          <div class="spec-highlights">
+            <div class="spec-item">
+              <span class="spec-val">400</span>
+              <span class="spec-lbl">Max Units/Hour</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">Cerachrom</span>
+              <span class="spec-lbl">Monobloc Ceramic</span>
+            </div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here -->
+      </div>
+    </section>
+
+    <!-- SECTION 4: CHRONOGRAPH (Left Watch Space, Right Text) -->
+    <section id="chronograph" class="scroll-section chronograph-section">
+      <div class="split-grid reverse">
+        <div class="content-col">
+          <span class="badge">Motorsport Heritage</span>
+          <h2>Chronograph Dial</h2>
+          <p class="desc-text">
+            Equipped with sub-dials that function as elapsed time indicators. The central sweep second hand allows accurate reading of 1/8 of a second, while the two counters at 3 and 9 o'clock display the elapsed minutes and hours respectively.
+          </p>
+          <div class="spec-highlights">
+            <div class="spec-item">
+              <span class="spec-val">1/8s</span>
+              <span class="spec-lbl">Precision Sweep</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">30m & 12h</span>
+              <span class="spec-lbl">Sub-Dial Counters</span>
+            </div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here -->
+      </div>
+    </section>
+
+    <!-- SECTION 5: CALIBRE MOVEMENT (Left Watch Exploded, Right Text) -->
+    <section id="calibre" class="scroll-section calibre-section">
+      <div class="split-grid reverse">
+        <div class="content-col">
+          <span class="badge">Chronograph Calibre</span>
+          <h2>Calibre 4130</h2>
+          <p class="desc-text">
+            Entirely developed and manufactured by Rolex, the Calibre 4130 self-winding mechanical chronograph movement provides unparalleled precision. Scroll to see the watch layers disassemble: from the sapphire crystal cover to the tachymeter bezel frame and sub-dials.
+          </p>
+          <div class="specs-box">
+            <div class="legend-item">
+              <span class="legend-dot ld-glass"></span>
+              <span>Scratch-resistant Sapphire Crystal cover</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot ld-screen"></span>
+              <span>Cerachrom Bezel with Tachymetric Scale</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot ld-pcb"></span>
+              <span>Rolex Chronograph Dial & sweep hands</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot ld-battery"></span>
+              <span>Calibre 4130 movement assembly & gears</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot ld-case"></span>
+              <span>Oystersteel Case & screw-down pushers</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot ld-sensor"></span>
+              <span>Hermetic screw-down Caseback plate</span>
+            </div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here (Exploded) -->
+      </div>
+    </section>
+
+    <!-- SECTION 6: TECHNICAL SPECIFICATIONS (Specs Grid) -->
+    <section id="specs" class="scroll-section specs-section">
+      <div class="split-grid">
+        <div class="content-col specs-col">
+          <span class="badge">Official Technical Data</span>
+          <h2>Specifications Sheet</h2>
+          <p class="desc-text" style="margin-bottom: 2rem;">
+            A complete reference sheet of the materials, precision tolerances, and movement features that define the Rolex Cosmograph Daytona.
+          </p>
+          
+          <div class="spec-table interactive-element">
+            <div class="spec-row">
+              <span class="spec-label">Model Case</span>
+              <span class="spec-value">Oyster, 40 mm, Oystersteel</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Bezel</span>
+              <span class="spec-value">Cerachrom ceramic tachymetric scale</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Water Resistance</span>
+              <span class="spec-value">Waterproof to 100 metres / 330 feet</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Movement</span>
+              <span class="spec-value">Perpetual mechanical chronograph, self-winding</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Calibre</span>
+              <span class="spec-value">Calibre 4130 (Rolex Manufacture)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Precision</span>
+              <span class="spec-value">-2/+2 sec/day, after casing</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Power Reserve</span>
+              <span class="spec-value">Approximately 72 hours</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Bracelet</span>
+              <span class="spec-value">Oyster flat three-piece links with folding clasp</span>
+            </div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here -->
+      </div>
+    </section>
+
+    <!-- SECTION 7: CUSTOMIZER (Left Controls, Right Watch Space) -->
+    <section id="customizer" class="scroll-section customizer-section">
+      <div class="split-grid">
+        <div class="content-col customizer-col interactive-element">
+          <span class="badge">Personal Showcase</span>
+          <h2>Configure Yours</h2>
+          <p class="desc-text" style="margin-bottom: 2rem;">
+            Configure your metal finishes and dial colors to design your custom Rolex Cosmograph Daytona.
+          </p>
+
+          <div class="customizer-card">
+            <!-- Metal Selection -->
+            <div class="control-group">
+              <label class="control-label">Precious Metal Finish</label>
+              <div class="selector-wrapper">
+                <button class="arrow-btn" id="metal-prev" title="Previous Metal">&larr;</button>
+                <div class="material-picker">
+                  <button class="material-btn active" data-material="oystersteel">Oystersteel</button>
+                  <button class="material-btn" data-material="gold">18k Yellow Gold</button>
+                  <button class="material-btn" data-material="everose">Everose Gold</button>
+                </div>
+                <button class="arrow-btn" id="metal-next" title="Next Metal">&rarr;</button>
+              </div>
+            </div>
+
+            <!-- Dial Color Selection -->
+            <div class="control-group">
+              <label class="control-label">Dial & Bezel Color</label>
+              <div class="selector-wrapper">
+                <button class="arrow-btn" id="color-prev" title="Previous Color">&larr;</button>
+                <div class="color-picker">
+                  <button class="color-option color-emerald active" data-color="#006039" title="Rolex Green"></button>
+                  <button class="color-option color-obsidian" data-color="#0a0a0a" title="Onyx Black"></button>
+                  <button class="color-option color-cobalt" data-color="#1d4ed8" title="Sunray Blue"></button>
+                </div>
+                <button class="arrow-btn" id="color-next" title="Next Color">&rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-col"></div> <!-- Watch will float here -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Slide Navigation Arrows -->
+  <div class="slide-nav-arrows interactive-element">
+    <button id="nav-up" class="nav-arrow" title="Previous Section">&uarr;</button>
+    <button id="nav-down" class="nav-arrow" title="Next Section">&darr;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Rolex. All rights reserved. Created in interactive WebGL. Rolex is a registered trademark of Montres Rolex S.A.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
